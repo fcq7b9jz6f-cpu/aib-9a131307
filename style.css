@@ -1,0 +1,182 @@
+/* General Body Styles */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header/Hero Section */
+.hero-section {
+    background: #333 url('https://images.pexels.com/photos/8350311/pexels-photo-8350311.jpeg?auto=compress&cs=tinysrgb&h=650&w=940') no-repeat center center/cover;
+    color: #fff;
+    padding: 60px 0;
+    text-align: center;
+    position: relative;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-image {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #fff;
+    margin-bottom: 20px;
+}
+
+.hero-section h1 {
+    margin: 10px 0;
+    font-size: 3em;
+    font-weight: 700;
+}
+
+.hero-section .tagline {
+    font-size: 1.2em;
+    font-weight: 300;
+    opacity: 0.9;
+}
+
+/* Main Content Sections */
+.main-content {
+    padding: 20px;
+    max-width: 960px;
+    margin: 20px auto;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.main-content section {
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.main-content section:last-of-type {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.main-content h2 {
+    color: #0d47a1; /* A deep blue for headings */
+    font-size: 2em;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #0d47a1;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.main-content h3 {
+    color: #1976d2; /* A slightly lighter blue for subheadings */
+    font-size: 1.5em;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.main-content p {
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.asset-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.asset-grid figure {
+    margin: 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: center;
+    background-color: #fcfcfc;
+    transition: transform 0.2s ease-in-out;
+}
+
+.asset-grid figure:hover {
+    transform: translateY(-5px);
+}
+
+.asset-grid img {
+    max-width: 100%;
+    height: 150px;
+    object-fit: contain; /* Use contain to show full image within box */
+    background-color: #efefef; /* Light background for logos/photos */
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.asset-grid figcaption {
+    padding: 10px;
+    background-color: #eee;
+    font-size: 0.9em;
+    color: #333;
+    font-weight: 500;
+}
+
+.asset-grid figcaption a {
+    text-decoration: none;
+    color: #0d47a1;
+}
+
+.asset-grid figcaption a:hover {
+    text-decoration: underline;
+}
+
+/* Contact Section */
+.contact-section p,
+.contact-section a {
+    font-size: 1.1em;
+    color: #0d47a1;
+    text-decoration: none;
+}
+
+.contact-section a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+.footer-section {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    font-size: 0.9em;
+    margin-top: 40px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2.5em;
+    }
+
+    .main-content {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .main-content h2 {
+        font-size: 1.8em;
+    }
+
+    .asset-grid {
+        grid-template-columns: 1fr;
+    }
+}
